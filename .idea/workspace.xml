@@ -20,6 +20,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="ZchAnnaRiv" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="ToDo" />
+  </component>
   <component name="ProjectId" id="1To3S8Ooo5aAZ6cRWqLUuWLkoe6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
@@ -81,7 +86,7 @@
       <workItem from="1574112618969" duration="6007000" />
       <workItem from="1574345750046" duration="141000" />
       <workItem from="1574774760247" duration="13527000" />
-      <workItem from="1574799106022" duration="256000" />
+      <workItem from="1574799106022" duration="1200000" />
     </task>
     <servers />
   </component>

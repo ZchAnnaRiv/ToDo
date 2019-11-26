@@ -1,11 +1,14 @@
 .icons-style{
     width: 65px;
-    font-size: 22px;
+    font-size: 23px;
     display: flex;
     justify-content: space-between;
     color: gray;
 }
-.list-item{
+.icons-style{
+    width: 65px;
+}
+.list-item {
     display: flex;
     align-content: center;
     justify-content: space-between;
