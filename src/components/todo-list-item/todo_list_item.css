@@ -1,0 +1,22 @@
+.icons-style{
+    width: 65px;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+}
+.list-item{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.icons-style >:first-child:hover{
+  color: red;
+}
+.icons-style >:last-child:hover{
+    color: limegreen;
+}
+.icons-style >:hover{
+    transform: scale(1.1);
+    border-radius: 100px;
+}

@@ -1,0 +1,14 @@
+*{
+    font-family: Muli;
+    margin: 0;
+}
+.todo-main{
+    border: 1px solid lightgray;
+    width: 40%;
+    min-width: 400px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+}

@@ -1,0 +1,12 @@
+.list-style{
+    list-style: none;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+.list-style li {
+    padding: 10px;
+    margin-left: -40px;
+}
+.list-style li:not(:first-child){
+    border-top: 1px solid lightgray;
+}
