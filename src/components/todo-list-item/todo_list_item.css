@@ -25,3 +25,13 @@
     border-radius: 100px;
     cursor: pointer;
 }
+.done{
+    text-decoration-line: line-through;
+}
+.important-style{
+    color: red;
+    font-weight: bold;
+}
+.important-style ~ div .important-item{
+    color: red;
+}

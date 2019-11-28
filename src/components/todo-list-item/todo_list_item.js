@@ -4,29 +4,49 @@ import FA from 'react-fontawesome';
 
 class TodoListItem extends React.Component  {
 
-    onTodoItemClick = () => {
-            alert(`Done: ${this.props.label}`);
-        }
+    state = {
+            done: false,
+        };
 
+    onTodoItemClick = () => {
+            this.setState(({done}) => {
+                return{
+                  done: !done,
+                  important: false,
+                };
+            })
+        }
+    onTodoItemImportantClick = () =>{
+        this.setState(({important}) => {
+            return {
+                done: false,
+                important: !important,
+        };
+        })
+    }
 
     render() {
-        const {label, important = false} = this.props;
+        const {label, onDelete} = this.props;
+        const {done, important} = this.state;
 
-        const Style = {
-            color: important ? 'tomato' : 'black'
-        };
+        let classNames = '';
+        if (done){
+            classNames += ' done';
+        }
+        if (important){
+            classNames += ' important-style';
+        }
     return(
         <div className='list-item'>
-            <span style={Style}
+            <span className={classNames}
             onClick={this.onTodoItemClick} >{label}</span>
             <div className='icons-style'>
-                <FA name="trash"/>
-                <FA name="exclamation"/>
+                <FA name="trash" onClick={onDelete}/>
+                <FA onClick={this.onTodoItemImportantClick} className='important-item'  name="exclamation"/>
             </div>
         </div>
     );
     }
-
 }
 
 export default TodoListItem;

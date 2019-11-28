@@ -12,10 +12,9 @@
     margin-left: 5px;
     width: 50%;
     height: 35px;
-
 }
 .search-filter  button{
-    width: 33%;
+    width: 33.3333%;
     padding-bottom: 5%;
     padding-top: 8px;
     text-align: center;
@@ -40,5 +39,5 @@
     cursor: pointer;
 }
 .search-filter .active{
-    background-color: limegreen;
+    background-color: lightgreen;
 }

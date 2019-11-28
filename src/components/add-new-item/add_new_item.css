@@ -1,0 +1,35 @@
+.add-item-field{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    margin-top: 25px;
+}
+.add-box{
+    margin: 0;
+    width: 75%;
+    border-radius: 5px;
+    outline-style: none;
+    border: 1px solid lightgray;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 10px;
+}
+.add-btn{
+    height: inherit;
+    width: 25%;
+    background: lightgreen;
+    border-radius: 100px;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    outline-style: none;
+}
+.add-btn:hover{
+    transform: scale(1.03);
+    font-weight: bolder;
+    color: white;
+    opacity: 0.75;
+}
+.add-btn:active{
+    transform: scale(0.98);
+}
