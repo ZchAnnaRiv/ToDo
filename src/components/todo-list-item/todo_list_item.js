@@ -8,26 +8,11 @@ class TodoListItem extends React.Component  {
             done: false,
         };
 
-    onTodoItemClick = () => {
-            this.setState(({done}) => {
-                return{
-                  done: !done,
-                  important: false,
-                };
-            })
-        }
-    onTodoItemImportantClick = () =>{
-        this.setState(({important}) => {
-            return {
-                done: false,
-                important: !important,
-        };
-        })
-    }
-
     render() {
-        const {label, onDelete} = this.props;
-        const {done, important} = this.state;
+        const {label, onDelete,
+            onToggleImportant,
+            onToggleDone,
+        important,done} = this.props;
 
         let classNames = '';
         if (done){
@@ -39,10 +24,10 @@ class TodoListItem extends React.Component  {
     return(
         <div className='list-item'>
             <span className={classNames}
-            onClick={this.onTodoItemClick} >{label}</span>
+            onClick={onToggleDone} >{label}</span>
             <div className='icons-style'>
                 <FA name="trash" onClick={onDelete}/>
-                <FA onClick={this.onTodoItemImportantClick} className='important-item'  name="exclamation"/>
+                <FA onClick={onToggleImportant} className='important-item'  name="exclamation"/>
             </div>
         </div>
     );
